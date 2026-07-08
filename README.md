@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PulseCRM
 
 A production-ready SaaS CRM dashboard built with Next.js App Router, TypeScript, Tailwind CSS, Prisma, PostgreSQL, NextAuth/Auth.js, Zod, Recharts, and shadcn-style UI primitives.
@@ -114,3 +115,7 @@ src/components    Shared UI, auth, dashboard shell, charts
 src/lib           Prisma client, auth config, validation, utilities
 prisma            Schema, migration, and seed data
 ```
+=======
+# Pulsecrm
+A premium SaaS CRM application with authentication, analytics, customer and lead management, task tracking, dark mode, and production-ready architecture.
+>>>>>>> 88b6c03f9b89e7059585ef15a89df372407d535c
