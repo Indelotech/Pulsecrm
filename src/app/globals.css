@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --primary: 214 84% 45%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 172 54% 92%;
+    --secondary-foreground: 181 84% 16%;
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 45%;
+    --accent: 38 92% 92%;
+    --accent-foreground: 31 96% 22%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 86%;
+    --input: 214 32% 86%;
+    --ring: 214 84% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+    --card: 222 41% 11%;
+    --card-foreground: 210 40% 98%;
+    --primary: 210 100% 62%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 178 36% 18%;
+    --secondary-foreground: 166 76% 88%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 72%;
+    --accent: 35 60% 18%;
+    --accent-foreground: 38 92% 86%;
+    --destructive: 0 70% 48%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 20%;
+    --input: 217 32% 20%;
+    --ring: 210 100% 62%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .dashboard-grid {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.55) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.55) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
